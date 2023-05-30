@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <form class="form" action="http://localhost:3000/request" method="POST">
+      <div class="form__header">
+        <h1>Login</h1>
+        <p>to start learning</p>
+      </div>
+      <div class="form__input-box">
+        <label for="email">Twitter handle</label>
+        <div class="form__input">
+          <input type="text" name="email" placeholder="Email" id="email" />
+          <i class="bi bi-check-lg"></i>
+        </div>
+        <p class="validate"></p>
+      </div>
+      <div class="form__input-box">
+        <label for="password">Twitter handle</label>
+        <div class="form__input">
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            id="password"
+          />
+          <i class="bi bi-eye"></i>
+        </div>
+      </div>
+      <a href="#">Forgot password</a>
+
+      <button type="submit">Login <i class="bi bi-arrow-right"></i></button>
+
+      <div class="form__footer">
+        <p>Don't have an account? <b>Sign up?</b></p>
+      </div>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
